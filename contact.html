@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.jpg">
+  <meta name="description" content="SpaceX Launch get in touch with the team behind SpaceX Launch">
+  <meta name="author" content="Sindre Martinsen">
+  <title>SpaceX Launch - Contact</title>
+  <link rel="stylesheet" href="css/css.css">
+  </head>
+
+<body>
+  <nav>
+  <div class="togglearea">
+    <label for="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+<div class="logo">
+<a href="index.html"><h2>SpaceX Launch</h2></a>
+</div>
+
+  <div class="topnav">
+  <input type="checkbox" id="toggle">
+  <div class="topnav-right">
+    <a href="about.html">About</a>
+    <a href="history.html">History</a>
+    <a href="faq.html">FAQ</a>
+    <a class="active" href="contact.html">Contact</a>
+
+  </div>
+</div>
+</nav>
+
+<div class="pagetitle">
+  <h1>Contact us:</h1>
+</div>
+<div class="row">
+  <div class="contactcolum">
+    <div class="container">
+         <div class="row">
+            <div class="col-25">
+                <br>Name: <br>
+                </div>
+                <div class="col-75">
+                <input type="text" name="firstName" id="firstName">
+                <span class="error" id="firstNameError">Please fill in your first name</span>
+            </div>
+            <div class="col-25">
+                <br>Last Name: <br>
+              </div>
+               <div class="col-75">
+                <input type="text" name="lastName" id="lastName">
+                <span class="error" id="lastNameError">Please fill in your last name</span>
+            </div>
+            <div class="col-25">
+                <br>Telephone: <br>
+              </div>
+              <div class="col-75">
+                <input type="text" name="phone" id="phone">
+                <span class="error" id="phoneError">Please fill in your phonenumber</span>
+            </div>
+            <div class="col-25">
+                <br>Email: <br>
+              </div>
+              <div class="col-75">
+                <input type="text" name="email" id="email">
+                <span class="error" id="emailError">Please fill in your email address</span>
+            </div>
+                <div class="col-25">
+                <br>Message: <br>
+              </div>
+              <div class="col-75">
+              <textarea id="text" name="msg" placeholder="Here you can type in your message to us.." style="height:200px"></textarea>
+                <span class="error" id="textError">Please enter a message</span>
+            <div class="col-75">
+                 <input type="submit" button onclick="return validateForm()" value="Submit">
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <div class="contactcolum">
+        <img src="img/contact.jpg" alt="Contact Satelite Image" class="contactpic">
+  </div>
+</div>
+<div class="footer">
+    &copy; SpaceX Launch Team 2020
+</div>
+<script src="script/contact.js"></script>
+</body>
+</html>
