@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.jpg">
+	<meta name="description" content="SpaceX Launch A one stop portal to see when the next space launch from SpaceX is happening">
+  <meta name="author" content="Sindre Martinsen">
+	<title>SpaceX Launch - One stop portal for next launch</title>
+	<link rel="stylesheet" href="css/css.css">
+  </head>
+
+<body>
+<nav>
+  <div class="togglearea">
+    <label for="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+<div class="logo">
+<a href="index.html"><h2>SpaceX Launch</h2></a>
+</div>
+
+  <div class="topnav">
+  <input type="checkbox" id="toggle">
+  <div class="topnav-right">
+    <a href="about.html">About</a>
+    <a href="history.html">History</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+
+  </div>
+</div>
+</nav>
+
+    <div class=thanks id="ThankYou">
+    <h2>Thank you for signing up, you will get an email notification next time a launch is near.</h2>
+</div>
+<section>
+<div class="row">
+  <div class="launchcolumn">
+    <img src="img/launch.jpg" alt="rocket launch" class="launchpic">
+  </div>
+  <div class="launchcolumn">
+    <div class="actualcountdown">
+    <h2>The next launch is happening:</h2>
+    <h1 id="launch">
+          </h1>
+     <button id="myBtn" class="myBtn">Sign up for reminder!</button>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+                <div class="col-25">
+                <br>Email: <br>
+              </div>
+                  <div class="col-75">
+                <input type="text" name="email" id="email">
+                <span class="error" id="emailError">Please enter a correct email address</span>
+                <div class="col-75">
+                 <input type="submit" button onclick="return validateForm()" value="Submit">
+            </div>
+            </div>
+          </div>
+
+</div>
+  </div>
+    </div>
+</div>
+</section>
+
+<section>
+<div class="row">
+  <div class="infocolumn">
+    <img src="img/romfart.png" alt="spaceship icon" class="frontpic">
+    <div class="infotext">
+    <h3>Who are we?</h3>
+    <p>We are a community driven page made for people with an interested for space, here you can are always welcome to come and see when SpaceX are launching their next rocket </p>
+    </div>
+  </div>
+  <div class="infocolumn">
+    <img src="img/satelitt.png" alt="satelite icon" class="frontpic">
+    <div class="infotext">
+    <h3>Get in touch with us</h3>
+    <p>This page are run on voluntarily, if you are intersted in getting in touch with the team behind. Don't be shy you can ask us for anything, and if you are intersted in giving a hand to this project please reach out.</p>
+    </div>
+  </div>
+  <div class="infocolumn">
+    <img src="img/jorden.png" alt="around the earth icon" class="frontpic">
+    <div class="infotext">
+    <h3>SpaceX</h3>
+    <p>We have been fans of this great company for years, if you want to learn more about what they do browse around our site </p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+ <section>
+<div class="greyback">
+  <div class="greybacktext">
+  <h2>SpaceX Launch Microsite</h2>
+<p>On this page the main focus is SpaceX Launches, on the frontpage you can see when the next launch are going to take place. If you browse trough the site you will also find information about previous launches done by SpaceX. </p>
+
+</div>
+
+</div>
+  </div>
+</section>
+
+<footer>
+<div class="footer">
+    &copy; SpaceX Launch Team 2020
+</div>
+</footer>
+
+<script src="script/index.js"></script>
+</body>
+</html>
